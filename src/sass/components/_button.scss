@@ -1,0 +1,24 @@
+.btn-big {
+    padding: 1.1rem 1.7rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: $normal-transition;
+    background: var(--colorSecondary);
+
+    &__href {
+        text-decoration: none;
+        color: var(--colorPrimary);
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: $header-font-family;
+    }
+
+    &:hover{
+        background: var(--colorPrimary);
+    }
+    &:hover &__href{
+        color: var(--colorSecondary);
+    }
+}

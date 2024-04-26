@@ -1,0 +1,94 @@
+.card {
+    height: 15rem;
+    width: 17%;
+    background-color: transparent;
+    box-shadow: 0 0 1rem var(--colorSecondary);
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        box-shadow: 0 0 3.5rem var(--colorSecondary);
+    }
+
+    &:hover &__img {
+        scale: 1.1;
+    }
+
+    @media screen and (max-width:1200px) {
+        width: 22%;
+    }
+
+    @media screen and (max-width:1050px) {
+        width: 27%;
+    }
+
+    @media screen and (max-width:820px) {
+        width: 31%;
+    }
+
+    @media screen and (max-width:700px) {
+        width: 45%;
+        height: 17rem;
+    }
+
+    @media screen and (max-width:500px) {
+        width: 70%;
+        height: 20rem;
+    }
+
+    @media screen and (max-width:450px) {
+        width: 90%;
+        height: 22rem;
+    }
+
+    &__top {
+        flex: 0 75%;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        color: var(--colorSecondary);
+        transition: $fast-transition;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: $green-secondary;
+        }
+    }
+
+    &__bottom {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+        color: $green-secondary;
+        font-weight: 600;
+        font-size: .9rem;
+
+        span {
+            color: var(--colorSecondary);
+            font-size: .9rem;
+
+            @media screen and (max-width:700px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

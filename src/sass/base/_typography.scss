@@ -1,0 +1,109 @@
+// BIG
+
+.b1 {
+    letter-spacing: 1px;
+    font-size: 3.8rem;
+    font-weight: 600;
+    font-family: $header-font-family;
+    text-wrap: nowrap;
+    color: $green-secondary;
+
+    @media screen and (max-width:1000px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width:680px) {
+        font-size: 2.6rem;
+    }
+    
+    @media screen and (max-width:550px) {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width:460px) {
+        font-size: 1.8rem;
+    }
+}
+
+.b2 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: $header-font-family;
+    color: var(--colorSecondary);
+
+    @media screen and (max-width:1000px) {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width:680px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width:550px) {
+        font-size: 1.9rem;
+    }
+
+    @media screen and (max-width:460px) {
+        font-size: 1.6rem;
+    }
+}
+
+.b3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: $main-font-family;
+    color: var(--colorSecondary);
+
+    @media screen and (max-width:1000px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width:680px) {
+        font-size: 1.8rem;
+    }
+
+    
+    @media screen and (max-width:550px) {
+        font-size: 1.7rem;
+    }
+
+    @media screen and (max-width:460px) {
+        font-size: 1.5rem;
+    }
+}
+
+// SMALL
+
+.s1 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: $main-font-family;
+    color: $color-gray;
+
+    @media screen and (max-width:680px) {
+        font-size: 1rem;
+    }
+}
+
+.s2 {
+    font-size: .9rem;
+    font-weight: 500;
+    font-family: $main-font-family;
+    color: var(--colorSecondary);
+
+    @media screen and (max-width:680px) {
+        font-size: .8rem;
+    }
+}
+
+.s3 {
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: $main-font-family;
+    color: var(--colorSecondary);
+
+    @media screen and (max-width:680px) {
+        font-size: .7rem;
+    }
+}

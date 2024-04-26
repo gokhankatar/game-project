@@ -1,0 +1,39 @@
+.navigation {
+    flex: 0 75%;
+    
+    &__list {
+        list-style: none;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        transition: $normal-transition;
+        color: var(--colorPrimary);
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-radius: 10px;
+            height: 5px;
+            width: 0;
+            bottom: -40%;
+            background: $green-secondary;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+
+    }
+
+    @media screen and (max-width:750px) {
+        display: none;
+    }
+}

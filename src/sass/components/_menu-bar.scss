@@ -1,0 +1,23 @@
+.menu-bar {
+    border: 1px solid $green-secondary;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: .5rem;
+    font-size: 1.3rem;
+    color: $green-secondary;
+    font-weight: 600;
+    transition: $fast-transition;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $green-secondary;
+        color: $color-white;
+    }
+
+    @media screen and (max-width:750px) {
+        display: flex;
+    }
+}
